@@ -8,5 +8,10 @@ setup(
     license="BSD",
     keywords="moq quic media",
     packages=find_packages(),
-    long_description=open(os.path.join(os.path.dirname(__file__), "README.md")).read()
+    long_description=open(os.path.join(os.path.dirname(__file__), "README.md")).read(),
+    entry_points={
+        "console_scripts": [
+            "moq-interop-runner = moq_interop.runner:main"
+        ]
+    }
 )
