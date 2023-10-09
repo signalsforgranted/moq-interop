@@ -1,0 +1,17 @@
+{
+  "implementations": {
+    "moq-rs": {
+      "raw": false,
+      "webtransport": true,
+      "producer": false,
+      "consumer": false,
+      "relay": true,
+      "encapsulations": ["warp"]
+    },
+    "moq-js": {
+    },
+    "google-quiche": {
+    }
+  }
+}
+
