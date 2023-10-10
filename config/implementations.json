@@ -1,17 +1,25 @@
 {
-  "implementations": {
-    "moq-rs": {
-      "raw": false,
-      "webtransport": true,
-      "producer": false,
-      "consumer": false,
-      "relay": true,
-      "encapsulations": ["warp"]
-    },
-    "moq-js": {
-    },
-    "google-quiche": {
-    }
+  "moq-rs": {
+    "image": "",
+    "url": "https://github.com/kixelated/moq-rs",
+    "raw": false,
+    "webtransport": true,
+    "producer": false,
+    "consumer": false,
+    "relay": true,
+    "encapsulations": ["warp"]
+  },
+  "moq-js": {
+    "image": "",
+    "url": "https://github.com/kixelated/moq-js",
+    "raw": false,
+    "webtransport": true,
+    "producer": true,
+    "consumer": true,
+    "relay": false,
+    "encapsulations": ["warp"]
+  },
+  "google-quiche": {
   }
 }
 
