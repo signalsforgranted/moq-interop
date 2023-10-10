@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="moq-interop",
-    version="",
+    version="0.0.1",
     author="Sarah Grant",
-    license="BSD",
+    license="Apache License 2.0",
     keywords="moq quic media",
     packages=find_packages(),
     long_description=open(os.path.join(os.path.dirname(__file__), "README.md")).read(),
