@@ -1,5 +1,40 @@
 version: "2"
 
+services:
+  red:
+    image: $RED
+    container_name: red
+    host_name: red
+    stdin_open: true
+    tty: true
+    volumes:
+      - $CERTS:/certs:ro
+    environment:
+      - ROLE=$ROLE
+      - SERVER_PARAMS=$SERVER_PARAMS
+      - TESTCASE=$TESTCASE
+    networks:
+      testnet:
+        ipv4_address: 10.0.0.1
+        ipv6_address: fd00:6d6f:7174::100
+
+  blue:
+    image: $BLUE
+    container_name: blue
+    host_name: blue
+    stdin_open: true
+    tty: true
+    volumes:
+      - $CERTS:/certs:ro
+    environment:
+      - ROLE=$ROLE
+      - SERVER_PARAMS=$SERVER_PARAMS
+      - TESTCASE=$TESTCASE
+    networks:
+      testnet:
+        ipv4_address: 10.0.0.2
+        ipv6_address: fd00:6d6f:7174::200
+
 networks:
   testnet:
     driver: bridge
