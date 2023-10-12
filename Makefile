@@ -2,9 +2,8 @@ venv: venv/setup
 
 venv/setup:
 	@test -d venv || python3 -m virtualenv venv
-	@. venv/bin/activate
-	pip3 install -U pip setuptools wheel
-	pip3 install .[dev]
+	@. venv/bin/activate; pip3 install -U pip setuptools wheel
+	@. venv/bin/activate; pip3 install ".[dev]"
 	@touch venv/setup
 
 clean:
