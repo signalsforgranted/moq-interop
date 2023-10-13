@@ -20,6 +20,14 @@
     "encapsulations": ["warp"]
   },
   "google-quiche": {
+    "image": "",
+    "url": "https://github.com/google/quiche",
+    "raw": false,
+    "webtransport": true,
+    "producer": true,
+    "consumer": true,
+    "relay": false,
+    "encapsulations": []
   }
 }
 
