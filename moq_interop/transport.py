@@ -1,5 +1,6 @@
 from enum import IntEnum
 
+NOQ_ALPN = ["moq-00"]
 
 class MoqTransport:
     """ MoqTransport is a primitive parser of the MoQ Transport specification
@@ -12,7 +13,7 @@ class MoqTransport:
         pass
 
 
-class MoqMessage(IntEnum):
+class MoqMessageType(IntEnum):
     OBJECT = 0x0
     SETUP = 0x1
     SUBSCRIBE_REQUEST = 0x3
