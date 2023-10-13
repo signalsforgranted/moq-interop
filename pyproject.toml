@@ -13,7 +13,7 @@ dev = [
 ]
 
 [project.scripts]
-moq-interop-runner = "moq_interop.runner:main"
+moq-interop-runner = "moq_interop.runner:Runner.main"
 
 [tool.setuptools]
 packages = ["moq_interop"]
