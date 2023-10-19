@@ -1,33 +1,30 @@
 {
   "moq-rs": {
+    "enabled": true,
     "image": "",
     "url": "https://github.com/kixelated/moq-rs",
     "raw": false,
     "webtransport": true,
-    "producer": false,
-    "consumer": false,
-    "relay": true,
-    "encapsulations": ["warp"]
+    "sender": false,
+    "consumer": false
   },
   "moq-js": {
+    "enabled": true,
     "image": "",
     "url": "https://github.com/kixelated/moq-js",
     "raw": false,
     "webtransport": true,
-    "producer": true,
-    "consumer": true,
-    "relay": false,
-    "encapsulations": ["warp"]
+    "sender": true,
+    "consumer": true
   },
   "google-quiche": {
+    "enabled": false,
     "image": "",
     "url": "https://github.com/google/quiche",
     "raw": false,
     "webtransport": true,
-    "producer": true,
-    "consumer": true,
-    "relay": false,
-    "encapsulations": []
+    "sender": true,
+    "consumer": true
   }
 }
 

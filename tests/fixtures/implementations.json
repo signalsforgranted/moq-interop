@@ -1,0 +1,39 @@
+{
+  "apple": {
+    "enabled": true,
+    "image": "",
+    "url": "https://localhost/apple",
+    "raw": false,
+    "webtransport": true,
+    "sender": false,
+    "consumer": true
+  },
+  "orange": {
+    "enabled": true,
+    "image": "",
+    "url": "https://localhost/orange",
+    "raw": false,
+    "webtransport": true,
+    "sender": true,
+    "consumer": false
+  },
+  "pear": {
+    "enabled": false,
+    "image": "",
+    "url": "https://localhost/pear",
+    "raw": true,
+    "webtransport": true,
+    "sender": true,
+    "consumer": true
+  },
+  "banana": {
+    "enabled": true,
+    "image": "",
+    "url": "https://localhost/banana",
+    "raw": true,
+    "webtransport": true,
+    "sender": true,
+    "consumer": true
+  }
+}
+
