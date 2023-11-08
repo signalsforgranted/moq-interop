@@ -20,6 +20,7 @@ Implementations should also test to see if they think a given interop test is a 
 This list should align with the [interop matrix](https://docs.google.com/spreadsheets/d/1C6hf76McVBUfnt84Eb_fY5Gd2qaGn9XLy22BdkTjuCw/edit#gid=0).
 
 | Test | Name | Description |
+|------|------|-------------|
 | 1 | Exchange Setup | Send a ClientSetup and receive a ServerSetup |
 | 2 | Exchange Subscribe/Ok | Send a Subscribe and receive a Subsscribe Ok |
 | 3 | Receive Object | Send or Receive an Object on an active subscription |
