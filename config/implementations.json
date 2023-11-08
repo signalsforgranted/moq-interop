@@ -25,6 +25,15 @@
     "webtransport": true,
     "sender": true,
     "consumer": true
+  },
+  "mengelbart": {
+    "enabled": false,
+    "image": "",
+    "url": "https://github.com/mengelbart/moqtransport",
+    "raw": true,
+    "webtransport": true,
+    "sender": true,
+    "consumer": true
   }
 }
 
