@@ -12,10 +12,16 @@ To keep the scope of the interop runner focused and prevent any overlap with exi
 
 ## Tests
 
+### Environment
+
+Implementations should also test to see if they think a given interop test is a pass or fail, and throw non-zero exit (how? TBD). Implementations will need to be configured with several details for each test:
+
+* General networking configuration - source and destination IP/ports, certificates
+* General environment - log/qlog output location, including `SSLKEYLOGFILE`
+* Testing information - name of the test, namespace/track name?
+
 > [!NOTE]
 > Should these tests be split by implementation capability - so each is done for WebTransport vs RAW QUIC, and for Relay/Producer/Consumer? MoQ Transport should be the same over both.
-
-Implementations should also test to see if they think a given interop test is a pass or fail, and throw non-zero exit (how? TBD).
 
 This list should align with the [interop matrix](https://docs.google.com/spreadsheets/d/1C6hf76McVBUfnt84Eb_fY5Gd2qaGn9XLy22BdkTjuCw/edit#gid=0).
 
@@ -37,7 +43,10 @@ When a handshake is successfully negotiated, that a QUIC connection using the ri
 
 That for a successful connection a termination signal is sent, acknowledged and the connection closed.
 
-### Subscription - 2, 5, 6
+### Subscription - 2, 6
 
 A consumer sends a subscription request that is acknowledged, and later unsubscribed.
 
+### Send & Receive Objects - 3, 5
+
+A consumer subscribes to a pre-defined address, receives some objects with a negotiated catalogue.
